@@ -21,10 +21,18 @@ def playGame():
         'Laundry Room': {'West': 'Living Room', 'North': 'Garage', 'item': 'rosemary'},
         'Garage': {'South': 'Laundry Room', 'item': 'sunblade'}
     }
-
+    current_room = 'Living Room'
     # define user inventory as an empty list
     inventory = []
+
     # WHILE True:
+    while True:
+        print("You are in the {}".format(current_room))
+        print("Inventory: {}".format(inventory))
+        if 'item' in current_room:
+            print("You see a {}".format(current_room.item))
+        print("----------------------------------")
+        print("Enter your move")
     # 	IF the inventory length is equal to 6
     # 		RETURN “You have defeated the vampire!”
     # 	ELIF the currentRoom is equal to the “Bathroom”
