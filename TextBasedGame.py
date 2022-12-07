@@ -1,7 +1,15 @@
 #Anabel Villalobos
 
-def playGame():
+#displays game instructions
+def show_instructions():
+   #print a main menu and the commands
+   print("Vampire Text Adventure Game")
+   print("Collect 6 items to win the game, or be killed by the vampire.")
+   print("Move commands: go South, go North, go East, go West")
+   print("Add to Inventory: get 'item name'")
 
+
+def playGame():
     # define rooms dictionary
     rooms = {
         'Living Room': {'North': 'Bedroom', 'West': 'Backyard', 'East': 'Laundry Room', 'South': 'Dining Room'},
@@ -51,5 +59,6 @@ def playGame():
 
 
 if __name__ == '__main__':
+    show_instructions()
     playGame()
 
